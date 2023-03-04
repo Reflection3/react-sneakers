@@ -43,11 +43,13 @@ function App() {
 					{
 						arr.map((obj) => (
 							<Card
-								title={obj.name}
+								title={obj.title}
 								price={obj.price}
 								imageUrl={obj.imageUrl}
+								onClick={() => console.log(obj)}
 							/>
-						))}
+						))
+					}
 				</div>
 			</div>
 		</div >
